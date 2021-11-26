@@ -7,11 +7,6 @@ After wasting a few hours trying to figure out why the official example (https:/
   <properties>
       <maven.compiler.target>1.8</maven.compiler.target>
       <maven.compiler.source>1.8</maven.compiler.source>
-      <avro.version>1.10.0</avro.version>
-      <jackson-dataformat-avro.version>2.13.0</jackson-dataformat-avro.version>
-      <lombok.version>1.18.20</lombok.version>
-      <commons-lang.version>3.12.0</commons-lang.version>
-      <reflections.version>0.10.2</reflections.version>
       <mvn.plugin-tools.version>3.5.2</mvn.plugin-tools.version>
       <mvn.plugin.version>3.5.4</mvn.plugin.version>
       <junit.version>5.8.1</junit.version>
@@ -20,31 +15,6 @@ After wasting a few hours trying to figure out why the official example (https:/
       <maven-resolver-api.version>1.7.2</maven-resolver-api.version>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>org.apache.avro</groupId>
-      <artifactId>avro</artifactId>
-      <version>${avro.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.dataformat</groupId>
-      <artifactId>jackson-dataformat-avro</artifactId>
-      <version>${jackson-dataformat-avro.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>${lombok.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>${commons-lang.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.reflections</groupId>
-      <artifactId>reflections</artifactId>
-      <version>${reflections.version}</version>
-    </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
@@ -86,13 +56,6 @@ After wasting a few hours trying to figure out why the official example (https:/
       <groupId>org.apache.maven.resolver</groupId>
       <artifactId>maven-resolver-api</artifactId>
       <version>${maven-resolver-api.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-core</artifactId>
-      <version>4.1.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
